@@ -8,10 +8,10 @@ use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {
-    public function __invoke()
+    public function index()
     {
-//        $categories = Category::all();
-//        return view('category.index', compact('categories'));
-        return 'category';
+        $categories = Category::all();
+        return view('category.index', compact('categories'));
+
     }
 }

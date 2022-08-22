@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class CreateController extends Controller
 {
-    public function __invoke()
+    public function index()
     {
         return view('category.create');
     }

@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class ShowController extends Controller
 {
-    public function __invoke(Category $category)
+    public function index(Category $category)
     {
         return view('category.show', compact('category'));
     }

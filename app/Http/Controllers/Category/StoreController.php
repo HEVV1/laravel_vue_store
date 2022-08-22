@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 
 class StoreController extends Controller
 {
-    public function __invoke(StoreRequest $request)
+    public function index(StoreRequest $request)
     {
         $data = $request->validated();
         Category::firstOrCreate($data);

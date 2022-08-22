@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 
 class UpdateController extends Controller
 {
-    public function __invoke(UpdateRequest $request, Category $category)
+    public function index(UpdateRequest $request, Category $category)
     {
         $data = $request->validate();
         $category->update($data);
